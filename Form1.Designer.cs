@@ -37,14 +37,14 @@
             // 
             clicker_text.Location = new Point(12, 12);
             clicker_text.Name = "clicker_text";
-            clicker_text.Size = new Size(100, 23);
+            clicker_text.Size = new Size(172, 23);
             clicker_text.TabIndex = 0;
             clicker_text.TextChanged += textBox1_TextChanged;
             // 
             // clicker
             // 
             clicker.Image = Properties.Resources.starter__1_;
-            clicker.Location = new Point(331, 324);
+            clicker.Location = new Point(357, 333);
             clicker.Name = "clicker";
             clicker.Size = new Size(103, 105);
             clicker.TabIndex = 1;
@@ -69,7 +69,7 @@
             Controls.Add(clicker);
             Controls.Add(clicker_text);
             Name = "Form1";
-            Text = "Form1";
+            Text = "clicker :3";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
