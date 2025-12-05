@@ -6,5 +6,10 @@ namespace clicker
         {
             InitializeComponent();
         }
+
+        private void clicker_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

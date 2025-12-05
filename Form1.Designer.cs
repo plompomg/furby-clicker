@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             textBox1 = new TextBox();
+            clicker = new Button();
+            shop = new Button();
             SuspendLayout();
             // 
             // textBox1
@@ -38,11 +40,31 @@
             textBox1.Size = new Size(100, 23);
             textBox1.TabIndex = 0;
             // 
+            // clicker
+            // 
+            clicker.Image = global::clicker.Properties.Resources.starter__1_;
+            clicker.Location = new Point(331, 324);
+            clicker.Name = "clicker";
+            clicker.Size = new Size(103, 105);
+            clicker.TabIndex = 1;
+            clicker.UseVisualStyleBackColor = true;
+            // 
+            // shop
+            // 
+            shop.Location = new Point(12, 415);
+            shop.Name = "shop";
+            shop.Size = new Size(75, 23);
+            shop.TabIndex = 2;
+            shop.Text = "shop";
+            shop.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(shop);
+            Controls.Add(clicker);
             Controls.Add(textBox1);
             Name = "Form1";
             Text = "Form1";
@@ -53,5 +75,7 @@
         #endregion
 
         private TextBox textBox1;
+        private Button clicker;
+        private Button shop;
     }
 }
