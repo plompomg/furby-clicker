@@ -28,26 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
+            clicker_text = new TextBox();
             clicker = new Button();
             shop = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // clicker_text
             // 
-            textBox1.Location = new Point(12, 12);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 0;
+            clicker_text.Location = new Point(12, 12);
+            clicker_text.Name = "clicker_text";
+            clicker_text.Size = new Size(100, 23);
+            clicker_text.TabIndex = 0;
+            clicker_text.TextChanged += textBox1_TextChanged;
             // 
             // clicker
             // 
-            clicker.Image = global::clicker.Properties.Resources.starter__1_;
+            clicker.Image = Properties.Resources.starter__1_;
             clicker.Location = new Point(331, 324);
             clicker.Name = "clicker";
             clicker.Size = new Size(103, 105);
             clicker.TabIndex = 1;
             clicker.UseVisualStyleBackColor = true;
+            clicker.Click += clicker_Click_1;
             // 
             // shop
             // 
@@ -65,16 +67,17 @@
             ClientSize = new Size(800, 450);
             Controls.Add(shop);
             Controls.Add(clicker);
-            Controls.Add(textBox1);
+            Controls.Add(clicker_text);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private TextBox textBox1;
+        private TextBox clicker_text;
         private Button clicker;
         private Button shop;
     }
